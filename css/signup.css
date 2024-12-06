@@ -1,0 +1,215 @@
+/* Default (light mode) styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name h1{
+    font-size: 18px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.dark-mode header {
+    background-color: #333;
+}
+
+.dark-mode nav a {
+    color: #f4f4f4;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    border: 2px solid #448fc2; /* Add a border around the entire section */
+    border-radius: 10px; /* Optional: Round the corners */
+}
+
+.left-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px; /* Add padding to the right for space */
+    border-right: 2px solid #448fc2; /* Add a right border for separation */
+}
+.logo-name {
+    display: flex;
+    align-items: center; /* Vertically align the logo and text */
+    justify-content: center;
+    margin-bottom: 20px; /* Space between the logo-name and paragraph */
+}
+
+.logo-image {
+    width: 50px; /* Reduced size of the logo */
+    height: auto;
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+.site-name {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 20px; /* Space between paragraph and images */
+    line-height: 1.6;
+    color: #333;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.phone-human {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-human .phone-image {
+    width: 200px;
+    height: auto;
+}
+
+.phone-human .human-image {
+    width: 200px;
+    height: 50vh;
+    margin-left: -90px; /* Move human closer to the phone */
+}
+
+
+.right-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Change to flex-start to align items at the top */
+    padding-left: 20px; /* Add padding to the left for space */
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px; /* Increase padding for larger form */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Increase width for larger form */
+    position: relative;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+.form {
+    display: none; /* Hide all forms by default */
+    opacity: 0; /* Start with invisible forms */
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+    margin-top: 50px;
+}
+
+.active-form {
+    display: block; /* Show only the active form */
+    opacity: 1; /* Make the active form visible */
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.toggle button.active {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #333;
+}
+
+.input-field input {
+    width: calc(100% - 40px); /* Make input fields responsive */
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
